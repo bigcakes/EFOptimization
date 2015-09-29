@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Data;
+using System.Data.Entity.Core.Objects;
 
 namespace EFOptimization.Controllers
 {
@@ -45,6 +47,20 @@ namespace EFOptimization.Controllers
       var total = orders.Sum(x => x.SubTotal);
 
 
+      return View("Index");
+    }
+
+    public ActionResult Test4()
+    {
+      var awContext = new AdventureWorks();
+
+      var customer = awContext.Customers.Where(x => x.CustomerID == 29825);
+      var customerquery = customer.ToString();
+
+      var orders = customer.First().SalesOrderHeaders.ToList();
+
+      var total = orders.Sum(x => x.SubTotal);
+      
       return View("Index");
     }
   }
