@@ -1,0 +1,10 @@
+C:\EFPresentation\Web\EFOptimization\EFOptimization.DataAccess\bin\Debug\EFOptimization.DataAccess.dll.config
+C:\EFPresentation\Web\EFOptimization\EFOptimization.DataAccess\bin\Debug\EFOptimization.DataAccess.dll
+C:\EFPresentation\Web\EFOptimization\EFOptimization.DataAccess\bin\Debug\EFOptimization.DataAccess.pdb
+C:\EFPresentation\Web\EFOptimization\EFOptimization.DataAccess\bin\Debug\EntityFramework.dll
+C:\EFPresentation\Web\EFOptimization\EFOptimization.DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\EFPresentation\Web\EFOptimization\EFOptimization.DataAccess\bin\Debug\EntityFramework.xml
+C:\EFPresentation\Web\EFOptimization\EFOptimization.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\EFPresentation\Web\EFOptimization\EFOptimization.DataAccess\obj\Debug\EFOptimization.DataAccess.csprojResolveAssemblyReference.cache
+C:\EFPresentation\Web\EFOptimization\EFOptimization.DataAccess\obj\Debug\EFOptimization.DataAccess.dll
+C:\EFPresentation\Web\EFOptimization\EFOptimization.DataAccess\obj\Debug\EFOptimization.DataAccess.pdb
