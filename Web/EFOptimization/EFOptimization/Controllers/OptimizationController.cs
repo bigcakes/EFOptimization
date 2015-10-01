@@ -77,11 +77,27 @@ namespace EFOptimization.Controllers
 
       return Json("Success!", JsonRequestBehavior.AllowGet);
     }
-    public ActionResult GetProductsNoChangesList()
+    public ActionResult GetTransactionHistoryNoChangesList()
     {
       var awContext = new AdventureWorks();
+      var timer = Stopwatch.StartNew();
 
-      var productFullList = awContext.Products.AsNoTracking().ToList();
+      var productFullList = awContext.TransactionHistories.AsNoTracking().ToList();
+
+      timer.Stop();
+      var time = timer.Elapsed;
+
+      return Json("Success!", JsonRequestBehavior.AllowGet);
+    }
+    public ActionResult GetTransactionHistoryList()
+    {
+      var awContext = new AdventureWorks();
+      var timer = Stopwatch.StartNew();
+
+      var productFullList = awContext.TransactionHistories.ToList();
+
+      timer.Stop();
+      var time = timer.Elapsed;
 
       return Json("Success!", JsonRequestBehavior.AllowGet);
     }
@@ -110,37 +126,7 @@ namespace EFOptimization.Controllers
 
       return Json("Success!", JsonRequestBehavior.AllowGet);
     }
-
-
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public ActionResult GetProductReviews(int productId = 1)
     {
